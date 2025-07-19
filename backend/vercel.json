@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/search",
+      "dest": "/api/main.py"
+    },
+    {
+      "src": "/product-details/(.*)",
+      "dest": "/api/main.py"
+    },
+    {
+      "src": "/download",
+      "dest": "/api/main.py"
+    },
+    {
+      "src": "/",
+      "dest": "/api/main.py"
+    }
+  ]
+}

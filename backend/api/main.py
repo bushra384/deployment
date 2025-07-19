@@ -281,7 +281,7 @@ def download():
     # Return the JSON file as a download
     return send_file("noon_products.json", as_attachment=True, mimetype="application/json")
 
-@app.route("/status", methods=["GET"])
+@app.route("/", methods=["GET"])
 def status():
     return jsonify({"is_scraping": is_scraping})
 
