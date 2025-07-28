@@ -2,6 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import './App.css';
 import { Routes, Route, useNavigate, useParams } from 'react-router-dom';
 
+const API_BASE_URL = "https://deployment-seven-psi.vercel.app";
 // Mock data for testing when API is not available
 const mockData = [
   {
@@ -203,7 +204,7 @@ function ProductDetail() {
       setError(null);
       try {
         // Always fetch from backend for full data
-        const response = await fetch(`/product-details/${product_id}`);
+        const response = await fetch(`${API_BASE_URL}/product-details/${product_id}`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -282,7 +283,7 @@ function App() {
     setDataFullyLoaded(false);
     setAllFoodItems([]);
     try {
-      const response = await fetch('/search');
+      const response = await fetch(`${API_BASE_URL}/search`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
