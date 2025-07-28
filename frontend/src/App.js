@@ -282,7 +282,7 @@ function App() {
     setDataFullyLoaded(false);
     setAllFoodItems([]);
     try {
-      const response = await fetch('http://localhost:5000/search');
+      const response = await fetch('/search');
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
