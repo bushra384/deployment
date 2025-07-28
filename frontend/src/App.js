@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import './App.css';
 import { Routes, Route, useNavigate, useParams } from 'react-router-dom';
 
-const API_BASE_URL = "https://deployment-seven-psi.vercel.app";
+const API_BASE_URL = "https://deployment-qga1-git-main-bushras-projects-11b26f40.vercel.app";
 // Mock data for testing when API is not available
 const mockData = [
   {
