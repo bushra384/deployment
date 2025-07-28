@@ -2,13 +2,13 @@ import React, { useState, useMemo, useEffect } from 'react';
 import './App.css';
 import { Routes, Route, useNavigate, useParams } from 'react-router-dom';
 
-const API_BASE_URL = "https://deployment-qga1-git-main-bushras-projects-11b26f40.vercel.app";
+const API_BASE_URL = "https://backend-omega-dun-14.vercel.app";
 // Mock data for testing when API is not available
 const mockData = [
   {
     image_url: "https://f.nooncdn.com/p/pzsku/ZFD49F52791DB3A6FD1FFZ/45/_/1737627676/c67e4be2-5115-4d8c-9acd-55bcba9ab023.jpg?width=400&format=avif",
-    name: "400g",
-    origin: "Mutti Pasta Sauce Rossoro Tomatoes With Genovese Basil PDO",
+    name: "Mutti Pasta Sauce Rossoro Tomatoes With Genovese Basil PDO",
+    origin: "UAE",
     original_price: "22.50",
     price: "18.60",
     size: "400g",
@@ -17,9 +17,9 @@ const mockData = [
   },
   {
     image_url: "https://f.nooncdn.com/p/pzsku/ZFD49F52791DB3A6FD1FFZ/45/_/1737627676/c67e4be2-5115-4d8c-9acd-55bcba9ab023.jpg?width=400&format=avif",
-    name: "500g",
-    origin: "Organic Fresh Tomatoes Premium Quality",
-    original_price: "",
+    name: "Organic Fresh Tomatoes Premium Quality",
+    origin: "UAE",
+    original_price: "22.99",
     price: "12.99",
     size: "500g",
     product_id: "mock2",
