@@ -12,7 +12,7 @@ import re
 from urllib.parse import urljoin
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:3000"])
+CORS(app)  # This allows every domain
 
 # Global variables for driver management
 driver = None
