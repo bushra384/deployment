@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import './App.css';
 import { Routes, Route, useNavigate, useParams } from 'react-router-dom';
 
-const API_BASE_URL = "https://backend-omega-dun-14.vercel.app";
+const API_BASE_URL = "http://127.0.0.1:3001";
 // Mock data for testing when API is not available
 const mockData = [
   {

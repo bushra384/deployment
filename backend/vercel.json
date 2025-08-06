@@ -2,26 +2,26 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/main.py",
-      "use": "@vercel/python"
+      "src": "api/main.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/search",
-      "dest": "/api/main.py"
+      "dest": "/api/main.js"
     },
     {
       "src": "/product-details/(.*)",
-      "dest": "/api/main.py"
+      "dest": "/api/main.js"
     },
     {
       "src": "/download",
-      "dest": "/api/main.py"
+      "dest": "/api/main.js"
     },
     {
       "src": "/",
-      "dest": "/api/main.py"
+      "dest": "/api/main.js"
     }
   ]
 }
